@@ -22,7 +22,9 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies (npm)
-        run: npm ci
+        # `npm ci` requires an existing package-lock.json. Use `npm install` in CI
+        # so the build works even if the repo uses bun and doesn't include a lockfile.
+        run: npm install --no-audit --no-fund
 
       - name: Build (npm)
         run: npm run build
