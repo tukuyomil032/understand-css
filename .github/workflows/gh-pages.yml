@@ -21,16 +21,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: stable
+      - name: Install dependencies (npm)
+        run: npm ci
 
-      - name: Install dependencies (bun)
-        run: bun install --frozen-lockfile
-
-      - name: Build
-        run: bun run build
+      - name: Build (npm)
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
