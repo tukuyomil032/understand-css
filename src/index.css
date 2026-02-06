@@ -21,7 +21,7 @@
 }
 
 .title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-weight: 700;
   font-size: 88px;
   margin: 0;
@@ -33,11 +33,10 @@
 .japanese {
   position: relative;
   margin-top: 0.6rem;
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", "TakaoPGothic", serif;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'TakaoPGothic', serif;
   font-size: 80px;
   white-space: nowrap;
-  font-family:
-    "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "TakaoPGothic", serif;
+  font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', 'TakaoPGothic', serif;
   font-size: 80px;
   transform: translateX(200px);
 }
