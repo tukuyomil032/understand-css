@@ -12,7 +12,8 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
     "preview": "vite preview",
     "prepare": "husky",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "deploy": "bun run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -35,7 +36,8 @@
     "prettier": "^3.8.1",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "gh-pages": "^5.0.0"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
