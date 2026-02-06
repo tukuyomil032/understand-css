@@ -1,0 +1,50 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.box {
+  position: relative;
+  width: 720px;
+  /* 上の余白を増やしてタイトルとボックス上端のバランスを調整 */
+  padding: 4rem 5.5rem 3.2rem 5.5rem;
+  box-sizing: border-box;
+  border: 4px solid #000;
+  border-radius: 40px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  /* 少し小さくして全体のバランスを取りやすくする */
+  font-size: 88px;
+  margin: 0;
+  line-height: 1;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.japanese {
+  position: relative;
+  /* 下に並べてから右にオフセットしてはみ出させる */
+  margin-top: 0.6rem;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'TakaoPGothic', serif;
+  /* 少し大きくして見栄えを近づける */
+  font-size: 80px;
+  white-space: nowrap;
+  font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', 'TakaoPGothic', serif;
+  /* 少し大きくして見栄えを近づける */
+  font-size: 80px;
+  transform: translateX(200px);
+}
+
+/* prevent text selection while dragging */
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
